@@ -1,1 +1,1 @@
-# terraform-gcp-provisioning
+# Terraform modules suite for Google Cloud
