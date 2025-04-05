@@ -1,1 +1,26 @@
+# Terraform provider for Google Cloud
+
 The Google Cloud provider is used to configure Google cloud infrastructure
+
+# Example Usage
+
+## This will use latest version of provider
+
+provider "google" {
+  project     = "my-project-id" # Your GCP project id where resource will provision
+}
+
+## But is you want to use a specific version use below provider configuration
+
+terraform {
+  required_providers {
+    google = {
+      source = "hashicorp/google"
+      version = "6.28.0"
+    }
+  }
+}
+
+provider "google" {
+  # Configuration options
+}
